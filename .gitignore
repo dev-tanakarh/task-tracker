@@ -1,0 +1,28 @@
+# Java
+*.class
+
+# Log files
+*.log
+
+# Build
+/target/
+/build/
+
+# IDEs
+.idea/
+/*.iml
+*.iws
+*.ipr
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+
+# Environment and config
+.env
+application.properties
+application.yml
