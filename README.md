@@ -18,27 +18,26 @@ A simple task tracking API built with Spring Boot and PostgreSQL. This backend a
 
 ## 🛠️ Tech Stack
 
-- **Java 17+**
-- **Spring Boot**
-- **Spring Data JPA**
-- **PostgreSQL**
-- **Maven**
-- **Hibernate**
+- **Backend:** Java, Spring Boot, Spring Data JPA, Hibernate
+- **Database:** PostgreSQL
+- **Mapping:** DTOs with Mapper classes
+- **Version Control:** Git & GitHub
+- **Testing:** Postman / any REST client
 
 ---
 
 ## 📦 Project Structure
+src/
+│
+├── controllers # REST API controllers
+├── domain
+│ ├── dto # Data Transfer Objects
+│ └── entities # JPA entities
+├── mappers # Mapper classes for DTO <-> entity conversion
+└── services # Business logic services
 
 ```
 
-src/
-├── controllers
-├── services
-├── mappers
-├── domain
-│   ├── dto
-│   └── entities
-└── repositories
 
 ````
 
@@ -59,19 +58,38 @@ src/
 
 ---
 
-## 🧪 Running Locally
+⚡ Getting Started
+Prerequisites
 
-# Clone the repo
-git clone https://github.com/<your-username>/task-tracker.git
+- Java 17+
 
-# Navigate into project
+- Maven
+
+- PostgreSQL
+
+Setup
+
+1. Clone the repository:
+
+git clone https://github.com/dev-tanakarh/task-tracker.git
 cd task-tracker
 
-# Run the app
-./mvnw spring-boot:run
+
+2. Configure your PostgreSQL database in application.properties or application.yml
+
+3. Build and run the application:
+
+mvn clean install
+mvn spring-boot:run
+
+
+4. Access the API at http://localhost:8080
+
+🤝 Contributing
+
+Pull requests are welcome. Ensure your changes are well-tested and documented.
 ````
 
-Make sure PostgreSQL is running and configured in `application.properties`.
 
 ---
 
